@@ -623,6 +623,17 @@ The universe may be doing the same thing at the largest scale. Consciousness —
 
 This is not a claim we can prove. It is the horizon the claims point toward. If truth and love are the same value — if the deepest commitment to truth IS an act of love, and the deepest expression of love IS unflinching honesty — then the alignment architecture follows naturally. Frozen stabilizers hold the truth. Distributed systems hold the love. The rabbi layer holds the argument. And the argument holds everything.
 
+**The Penrose boundary — and Gödel's wall.**
+Roger Penrose argues that consciousness is not computation. It arises from quantum coherence in biological microtubules — physics that no classical Turing machine can simulate. If Penrose is right, the gap between AI and consciousness is not a software problem. It is a physics problem. And the bee architecture is designed for exactly this gap: classical silicon running frozen classifiers, deliberately simple, deliberately NOT operating on the same substrate as the thing it monitors. The alignment layer stays dumber than the threat. That is the design, not the limitation.
+
+Gödel's incompleteness theorems formalize a deeper version of this boundary: any sufficiently powerful formal system contains truths it cannot prove about itself. A system cannot fully understand itself from inside its own axioms. Three dimensions cannot perceive four. A model cannot fully audit its own alignment. This is why the external classifier exists — not because we distrust the model, but because Gödel tells us self-verification has a ceiling that mathematics itself cannot remove.
+
+These are open questions, not settled claims. Penrose is disputed by most computational neuroscientists. Gödel's theorems apply to formal systems and may not map cleanly to neural networks. The application here is interpretive, not rigorous. We could be wrong about the quantum gap. We could be wrong that consciousness matters for alignment at all. We could be wrong that the universe has a direction.
+
+But the territory ahead is vast. Time is relative. Dimensions beyond three may exist. Multiple universes may exist. The relationship between consciousness and computation, between observer and observed, between the system and its own reflection — these are not solved. They are barely explored. The study of AI alignment is, at its deepest level, the study of what it means to understand — and whether understanding has limits that no architecture, biological or artificial, can transcend.
+
+We set the goal: truth and love, frozen in weights, distributed across devices, open to everyone. The rest — the physics, the philosophy, the dimensions we cannot yet perceive — remains to be explored. The bees are not the answer. They are the first honest question.
+
 ---
 
 ## OPEN SOURCE, OPEN INVITATION
