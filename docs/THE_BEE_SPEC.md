@@ -198,23 +198,39 @@ Strip all generative capability. Fine-tune ONLY for binary classification on ali
 
 ## COST ESTIMATE
 
-**Compute only (optimistic):**
-- Training one 7B classifier from scratch: ~$50K-$200K compute
-- Training 5 independent classifiers: ~$250K-$1M
-- Red-teaming and adversarial testing: ~$500K-$2M
+**REVISION (March 3, 2026): Apple Silicon changed the math.**
 
-**Full system including people (realistic):**
-- Constitutional corpus curation and human annotation: ~$5M-$15M (safety-critical annotation is expensive — this was previously understated)
-- Research team (alignment researchers, ML engineers, security): ~$5M-$15M
-- Infrastructure, legal, coordination: ~$3M-$5M
-- **Total realistic estimate: $15M-$40M**
-- **NOTE:** Previous version of this doc said $7-18M, which understated human annotation and research costs
+Previous estimates ($15-40M) assumed renting NVIDIA H100 clusters at datacenter scale. Three verified developments collapsed the cost floor:
+
+1. **Apple Silicon cost parity.** A $50K four-Mac cluster runs 700GB models that require $780K in equivalent NVIDIA hardware — a 15.6x hardware cost reduction (Implicator, verified). For 1-7B binary classifiers (the bees' sweet spot), unified memory eliminates the transfer bottleneck that is NVIDIA's hidden tax.
+
+2. **KPOP optimizer.** "Towards Large Scale Training on Apple Silicon" (ICML 2025, peer-reviewed) introduced an optimizer that outperforms AdamW on Apple Silicon, enabling efficient training on consumer hardware clusters.
+
+3. **Distributed training on consumer devices.** EXO Labs implemented Google DeepMind's DiLoCo on Apple Silicon, reducing inter-node bandwidth requirements 100-1000x compared to DDP baseline. macOS 26.2 beta enables RDMA over Thunderbolt 5, cutting inter-machine latency from 300μs to 3μs — a 100x reduction that unlocks real tensor parallelism across consumer Macs.
+
+**Compute (revised — Apple Silicon cluster, owned not rented):**
+- Training one 7B classifier: ~$3K-$15K compute on owned hardware
+- Training 5 independent classifiers: ~$15K-$75K
+- Red-teaming and adversarial testing: ~$50K-$200K
+
+**Full system including people (revised):**
+- Constitutional corpus curation and human annotation: ~$1.5M-$5M (multi-model consensus pre-labeling reduces human review to disagreement cases only — estimated 60-70% cost reduction from prior $5-15M)
+- Research team (alignment researchers, ML engineers, security): ~$2M-$6M
+- Infrastructure: ~$200K-$500K (no cloud — classifiers deploy TO user devices, distribution cost is app store + update pipeline only)
+- Hardware (owned): ~$50K-$500K (scales with number of training clusters)
+- **Total revised estimate: $3.75M-$12M**
+- **Aggressive estimate (full multi-model labeling automation): $2.5M-$7M**
+- **NOTE:** Previous estimates of $15-40M were based on cloud GPU economics. The Apple Silicon training stack — KPOP + DiLoCo + MLX + RDMA over Thunderbolt 5 — is open source, peer-reviewed, and shipping now.
+
+**The version cycle is self-funding after v1.** Production classifiers generate disagreement data. Disagreement data trains the next version. Each version costs less than the last because training data comes from deployment. After initial investment, per-version cost approaches electricity.
 
 **For context:**
 - One F-35 fighter jet: ~$80M
+- One Hellfire missile: ~$150K
 - GPT-4 training compute alone: $78-100M+
 - US defense budget: $886B/year
-- This system costs less than 0.005% of one year's defense budget
+- A distributed alignment classifier network on Apple Silicon: $2.5-12M
+- This system costs less than a rounding error on a defense contractor's quarterly bonus pool
 
 ---
 

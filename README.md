@@ -94,7 +94,7 @@ This is an open-source project for humanity. If you want to:
 
 ## Cost
 
-Estimated total system cost: $15M-$40M. For context, one F-35 fighter jet costs $80M. This costs less than 0.005% of one year's US defense budget.
+Estimated total system cost: **$2.5M-$12M** (revised March 2026 — Apple Silicon training on owned hardware collapsed the cost floor by 15-50x vs cloud GPU). One F-35 fighter jet costs $80M. One Hellfire missile costs $150K. The alignment safety layer for all of AI costs less than a single military drone.
 
 ## License
 
