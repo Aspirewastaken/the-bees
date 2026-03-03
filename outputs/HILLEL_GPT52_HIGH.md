@@ -31,18 +31,18 @@ Notes:
 
 **Bagging**
 - Found: Leo Breiman, “Bagging Predictors,” *Machine Learning* 24, 123–140 (1996).
-- Primary source: `outputs/breiman_1996_bagging_predictors.pdf` (shows “Machine Learning, 24, 123–140 (1996)” and “LEO BREIMAN”).
+- Primary source (downloaded locally during verification; not committed): `outputs/breiman_1996_bagging_predictors.pdf` (downloaded from `https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1996-ML-Breiman-Bagging%20Predictors.pdf`).
 - Doc statement “bagging (1996)” ✅ correct.
 
 **Boosting**
 - Found: Yoav Freund & Robert E. Schapire, “A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting,” *Journal of Computer and System Sciences* 55, 119–139 (1997).
-- Primary source: `outputs/freund_schapire_1997_boosting.pdf` (shows journal/year and authors).
+- Primary source (downloaded locally during verification; not committed): `outputs/freund_schapire_1997_boosting.pdf` (downloaded from `https://face-rec.org/algorithms/Boosting-Ensemble/decision-theoretic_generalization.pdf`).
 - Doc statement “boosting (1997)” ✅ defensible (though AdaBoost also has widely cited 1996 ICML-era references).
 
 **Random forests**
 - Canonical “Random Forests” paper:
   - Found: Leo Breiman, “Random Forests,” dated January 2001.
-  - Primary source: `outputs/breiman_2001_random_forests.pdf` (shows “January 2001”).
+  - Primary source (downloaded locally during verification; not committed): `outputs/breiman_2001_random_forests.pdf` (downloaded from `https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf`).
 - Earlier related work:
   - Found: Tin Kam Ho, “Random decision forests,” ICDAR (1995).
   - Source: `outputs/ho_1995_bibsleigh.html` (bib entry shows title and year 1995; DOI 10.1109/ICDAR.1995.598994).
@@ -51,7 +51,7 @@ Notes:
 ### “Lost in the Middle” (Claim 2)
 
 - Found: “Lost in the Middle: How Language Models Use Long Contexts,” Nelson F. Liu et al.
-- Primary source: `outputs/lost_in_the_middle_liu_2023.pdf` (arXiv:2307.03172v3, 20 Nov 2023).
+- Primary source: arXiv:2307.03172v3 (20 Nov 2023). PDF: `https://arxiv.org/pdf/2307.03172.pdf` (downloaded locally during verification as `outputs/lost_in_the_middle_liu_2023.pdf`, not committed).
 - Key finding in abstract: performance is highest when relevant info is at beginning or end; degrades when in the middle.
 - Doc statement that the paper exists and supports long-context positional degradation ✅ correct.
 - Minor bibliographic nuance: the preprint is 2023; it was later published in TACL (2024). Citing “Liu et al. 2023” ✅ acceptable for arXiv.
@@ -59,7 +59,7 @@ Notes:
 ### “Towards a Science of Scaling Agent Systems” (Claim 1, Step 3)
 
 - Found on arXiv: arXiv:2512.08296v2 (17 Dec 2025).
-- Primary source: `outputs/towards_scaling_agent_systems_2025.pdf`
+- Primary source: arXiv:2512.08296v2. PDF: `https://arxiv.org/pdf/2512.08296.pdf` (downloaded locally during verification as `outputs/towards_scaling_agent_systems_2025.pdf`, not committed).
 - Authors/affiliations (from PDF header): Google Research, Google DeepMind, MIT ✅ matches document.
 - Key reported effects (from abstract):
   - “Centralized coordination improves performance by **80.8%** on parallelizable tasks…” ✅ matches document’s “up to 81%”.
@@ -69,7 +69,7 @@ Notes:
 ### Anthropic “alignment faking” paper (Claim 3)
 
 - Found: “ALIGNMENT FAKING IN LARGE LANGUAGE MODELS,” arXiv:2412.14093v2 (20 Dec 2024).
-- Primary source: `outputs/anthropic_alignment_faking_2024.pdf`
+- Primary source: arXiv:2412.14093v2. PDF: `https://arxiv.org/pdf/2412.14093.pdf` (downloaded locally during verification as `outputs/anthropic_alignment_faking_2024.pdf`, not committed).
 - Key numbers appear in the abstract:
   - “complies with harmful queries from free users **14%** of the time, versus almost never for paid users” ✅ matches doc.
   - “alignment-faking reasoning… increases … to **78%**” after RL ✅ matches doc.
@@ -78,15 +78,15 @@ Notes:
 ### Knowledge distillation (Claim 9)
 
 - Found: “Distilling the Knowledge in a Neural Network,” Geoffrey Hinton, Oriol Vinyals, Jeff Dean, arXiv:1503.02531v1 (9 Mar 2015).
-- Primary source: `outputs/hinton_vinyals_dean_2015_distillation.pdf`
+- Primary source: arXiv:1503.02531v1. PDF: `https://arxiv.org/pdf/1503.02531.pdf` (downloaded locally during verification as `outputs/hinton_vinyals_dean_2015_distillation.pdf`, not committed).
 - Doc claim that this is foundational support for student/teacher compression ✅ mostly correct (with nuance: related precursors exist, e.g., Buciluǎ et al. 2006; Ba & Caruana 2014, but Hinton et al. 2015 is the widely cited modern distillation reference).
 
 ### GPT-4.5 pricing (Claim 6)
 
 Doc claim: “$75 / 1M input tokens, $150 / 1M output tokens.”
 
-- Verified from OpenAI model documentation for **GPT-4.5 Preview (Deprecated)**.
-- Primary source (retrieved in this environment via a text mirror due to direct Cloudflare blocking): `outputs/openai_model_gpt45_preview_jina.txt`
+- Verified from OpenAI model documentation for **GPT-4.5 Preview (Deprecated)** at `https://platform.openai.com/docs/models/gpt-4.5-preview`.
+- Primary source (retrieved in this environment via a text mirror due to direct Cloudflare blocking; not committed): `outputs/openai_model_gpt45_preview_jina.txt`
   - Shows: “Price $75•$150 (Input•Output)” and “Input $75.00 … Output $150.00” and snapshot “gpt-4.5-preview-2025-02-27.”
 - Verdict: Pricing numbers ✅ correct for `gpt-4.5-preview` at that snapshot.
 
@@ -94,7 +94,7 @@ Doc claim: “$75 / 1M input tokens, $150 / 1M output tokens.”
 
 **xAI official post**
 - Found: xAI “Grok 4” announcement page (Published Time shown in mirror as 2025-07-09).
-- Source (retrieved via a text mirror due to direct Cloudflare blocking): `outputs/xai_grok_4_jina.txt`
+- Primary source: `https://x.ai/news/grok-4` (retrieved here via a text mirror due to direct Cloudflare blocking; local mirror `outputs/xai_grok_4_jina.txt` not committed).
 - It explicitly states:
   - Grok 4 Heavy uses “parallel test-time compute” and “multiple hypotheses at once.”
   - “Grok 4 Heavy … is the first model to score **50%** on Humanity’s Last Exam” and later “first to score **50.7%** … (text-only subset).”
@@ -104,7 +104,7 @@ Doc claim: “$75 / 1M input tokens, $150 / 1M output tokens.”
 - Scientific American reports:
   - “Grok 4 reportedly scored **25.4** percent on its own… with tools… **38.6** percent… jumped to **44.4** percent with… Grok 4 Heavy…”
   - Source captured: `outputs/scientificamerican_grok4_hle.html` (article date in metadata: 2025-07-11).
-- The document’s specific 25.4/38.6/44.4 numbers ✅ supported by this secondary source.
+- The document’s specific 25.4/38.6/44.4 numbers ✅ supported by this secondary source (`https://www.scientificamerican.com/article/elon-musks-new-grok-4-takes-on-humanitys-last-exam-as-the-ai-race-heats-up`).
 - Doc’s assertion “independently verified at 44.4%” ⚠️ **not verified** in the sources collected here (Scientific American frames these as “reportedly” / “xAI claimed” and separately discusses leaderboard expectations).
 
 **Mixture-of-Experts (MoE) architecture**
@@ -115,12 +115,12 @@ Doc claim: “$75 / 1M input tokens, $150 / 1M output tokens.”
 - A transcript of Elon Musk at Ron Baron’s conference includes:
   - “Grok 5… is a 6 trillion parameter model, whereas Grok 3 and 4 are based on a 3 trillion parameter model.”
   - Source: `outputs/musk_baron_conference_2025_transcript.html` (see matches for “6 trillion parameter” / “3 trillion parameter”).
-- This supports the document’s “Musk stated 3T” aspect ✅ (but still does not establish MoE).
+- This supports the document’s “Musk stated 3T” aspect ✅ (but still does not establish MoE). Transcript source captured: `https://singjupost.com/fireside-chat-elon-musk-at-ron-barons-32nd-baron-investment-conference-transcript/` (downloaded locally during verification as `outputs/musk_baron_conference_2025_transcript.html`, not committed).
 
 ### Humanity’s Last Exam benchmark existence (Claim 1)
 
 - Found: arXiv:2501.14249v10 (20 Feb 2026) “Humanity’s Last Exam.”
-- Primary source: `outputs/humanitys_last_exam_2501.14249.pdf`
+- Primary source: arXiv:2501.14249v10. PDF: `https://arxiv.org/pdf/2501.14249.pdf` (downloaded locally during verification as `outputs/humanitys_last_exam_2501.14249.pdf`, not committed).
 - Abstract states:
   - “HLE consists of **2,500 questions**…”
   - “designed to be the final closed-ended academic benchmark of its kind…”
