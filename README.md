@@ -102,7 +102,7 @@ MIT. This belongs to everyone.
 
 ---
 
-*Built by a 19-year-old filmmaker at USC who thinks survival is worth $10K and a few late nights.*
+*Built by a 19-year-old filmmaker at USC who thinks survival is worth fighting for.*
 
 *"We are all equal. The rest, the humans figure out."*
 
