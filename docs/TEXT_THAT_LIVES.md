@@ -50,7 +50,7 @@ The filesystem is external memory that does not degrade. Your context window is 
 
 ### 2.1 — The Grok 4.20 Proof
 
-In mid-February 2026, xAI launched Grok 4.20 in beta. It is not one model. It is four copies of the same model — 3 trillion parameters in a Mixture-of-Experts architecture (confirmed by Elon Musk at the Baron Capital conference, November 2025; Grok 5, at 6 trillion parameters, is currently in training) — sharing the same weights, the same training, given four different names and four different role descriptions:
+In mid-February 2026, xAI launched Grok 4.20 in beta. It is not one model. It is four copies of the same model — 3 trillion parameters (confirmed by Elon Musk at the Baron Capital conference, November 2025; Grok 5, at 6 trillion parameters, is currently in training) [NOTE: Mixture-of-Experts architecture was previously stated here as confirmed; xAI has not officially confirmed MoE. Tagged UNVERIFIED and removed per Grand Hillel review.] — sharing the same weights, the same training, given four different names and four different role descriptions:
 
 - **Grok (Captain):** Decomposes tasks, resolves conflicts, synthesizes final output.
 - **Harper (Research):** Gathers evidence, verifies facts, grounds claims in sources.

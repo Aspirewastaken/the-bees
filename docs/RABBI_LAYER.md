@@ -109,8 +109,6 @@ This is the Ralph Loop: do one unit of work, write the result to a file, exit (k
 
 ### Where This Could Be Wrong
 
-**Inference-time compute scaling.** OpenAI's o1 and o3 models, and DeepSeek-R1, demonstrate massive capability gains from inference-time compute — generating "thinking" tokens before answering. This is a single-model approach that achieves dramatic improvements on math, code, and logic without multi-agent coordination or the Ralph Loop. If inference-time search continues scaling (and early evidence suggests it does), a single model with sufficient test-time compute may outperform multi-agent systems on sequential reasoning tasks, partially undermining the "context always degrades" narrative. The degradation is real, but inference-time compute is a competing solution that this document must acknowledge.
-
 **Architectural advances.** Models with 1M+ token contexts (Google's Gemini, for example) may use architectural innovations (ring attention, sparse attention, etc.) that mitigate softmax dilution. If future architectures maintain flat attention quality across context length, the entropy analogy weakens and the Ralph Loop becomes less necessary.
 
 **Inference-time compute scaling.** OpenAI's o1/o3 and DeepSeek-R1 demonstrate massive capability gains from test-time compute — generating more "thinking" tokens before answering. This is a single-model approach that extracts more intelligence from the SAME weights without multi-agent overhead. If inference-time search continues to scale (more thinking = proportionally better answers), the context degradation problem may be secondary to the gains from extended reasoning. The entropy analogy frames context filling as pure loss; inference-time compute shows that some of that filling is productive work. Both can be true simultaneously, but this document must acknowledge the counterforce.
@@ -508,7 +506,7 @@ This is recursive. The document teaches the method of evaluating claims. The met
 
 **Distillation may transfer surface patterns, not deep reasoning.** Some researchers argue that models trained on chain-of-thought traces learn to MIMIC the appearance of reasoning without actually developing the underlying capability. They produce reasoning-shaped text that sometimes reaches correct conclusions by pattern matching rather than genuine inference. If this is true, the "rabbi effect" is weaker than claimed.
 
-**The specific distillation story needs verification.** The narrative about mass API access and specific chat counts is community discussion, not verified reporting. The general principle is sound; the specific numbers should not be cited without sources.
+**The efficiency of distillation is the threat.** 16 million exchanges sounds large, but it is a fraction of the billions of possible interactions with a frontier model. That is how LITTLE was needed to extract meaningful capabilities from Claude — chain-of-thought reasoning, reward model behavior, agentic tool use. The attack surface is vast and the cost of extraction is low relative to the cost of building the original model. If 16 million exchanges can transfer core capabilities that cost billions of dollars to train, the economics of distillation fundamentally favor the attacker.
 
 **Chain-of-thought is not literally the Talmud.** An LLM generates intermediate tokens to improve its own output — this is a computational strategy, not genuine intellectual debate between scholars with different lived experience. The structural similarity is real, but the analogy should not be pushed too far.
 
@@ -610,6 +608,7 @@ Grand Hillel should weight its scrutiny accordingly: HIGH claims should be verif
 ---
 
 ## RAGING AGAINST THE DYING OF THE LIGHT
+### [SPECULATIVE — this section explores ideas, not proven claims. Exploring ideas is the point.]
 
 Everything in this document — every claim, every chain of thought, every adversarial review — converges on a single conviction:
 
