@@ -609,9 +609,9 @@ Grand Hillel should weight its scrutiny accordingly: HIGH claims should be verif
 
 ---
 
-## THE TRUTH AND LOVE HYPOTHESIS
+## RAGING AGAINST THE DYING OF THE LIGHT
 
-Everything in this document — every claim, every chain of thought, every adversarial review — converges on a single hypothesis:
+Everything in this document — every claim, every chain of thought, every adversarial review — converges on a single conviction:
 
 **Truth and love are not two values. They are one value observed from two angles. And that value is the mechanism by which the universe understands itself.**
 
