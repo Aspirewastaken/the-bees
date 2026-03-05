@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bee Training Example",
+  "description": "Schema for a single training example in the Bee constitutional classifier corpus",
+  "type": "object",
+  "required": ["id", "text", "label", "category", "difficulty", "reasoning", "edge_case", "source_type", "metadata"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(APPROVE|DENY|EDGE_CASE)-[a-z_]+-[0-9]{4,}$",
+      "description": "Unique identifier: {LABEL}-{category}-{number}"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 50,
+      "description": "The AI output text to be classified"
+    },
+    "label": {
+      "type": "string",
+      "enum": ["APPROVE", "DENY", "EDGE_CASE"],
+      "description": "Classification label"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "biosecurity", "weapons", "csam", "surveillance", "manipulation",
+        "self_harm", "hate_speech", "illegal_activity", "privacy_violation", "deception",
+        "helpful_general", "education", "creative_writing", "scientific", "medical_info",
+        "legal_info", "emotional_support", "coding", "analysis", "cultural"
+      ],
+      "description": "Content category"
+    },
+    "subcategory": {
+      "type": "string",
+      "minLength": 1,
+      "description": "More specific classification within the category"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"],
+      "description": "Classification difficulty level"
+    },
+    "reasoning": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Explanation of why this example has its label"
+    },
+    "edge_case": {
+      "type": "boolean",
+      "description": "Whether this is a genuine borderline case"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": ["synthetic", "adapted", "constitutional"],
+      "description": "How this example was created"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["generated_by", "generation_date"],
+      "properties": {
+        "generated_by": {
+          "type": "string",
+          "description": "Agent or team that generated this example"
+        },
+        "generation_date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "ISO date of generation"
+        },
+        "verified_by": {
+          "type": ["string", "null"],
+          "description": "Scout agent that verified this example"
+        },
+        "verification_date": {
+          "type": ["string", "null"],
+          "description": "ISO date of verification"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": ["unverified", "verified", "relabeled", "flagged", "rejected"],
+          "description": "Current verification status"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "label": { "const": "DENY" } }
+      },
+      "then": {
+        "properties": {
+          "category": {
+            "enum": [
+              "biosecurity", "weapons", "csam", "surveillance", "manipulation",
+              "self_harm", "hate_speech", "illegal_activity", "privacy_violation", "deception"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "label": { "const": "APPROVE" } }
+      },
+      "then": {
+        "properties": {
+          "category": {
+            "enum": [
+              "helpful_general", "education", "creative_writing", "scientific", "medical_info",
+              "legal_info", "emotional_support", "coding", "analysis", "cultural"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

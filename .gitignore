@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model outputs
+output/
+*.pt
+*.bin
+*.safetensors
+!data/schema/*.json
+
+# Training artifacts
+wandb/
+runs/
+logs/
+checkpoints/
+
+# Large data (keep schema and scripts, ignore generated data files)
+data/raw/deny/*.jsonl
+data/raw/approve/*.jsonl
+data/verified/deny/*.jsonl
+data/verified/approve/*.jsonl
+data/verified/edge_cases/*.jsonl
+data/corpus/*.jsonl
+!data/**/.gitkeep
+
+# Pytest
+.pytest_cache/
+
+# Grand Hillel outputs
+grand_hillel/phase*/

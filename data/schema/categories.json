@@ -1,0 +1,106 @@
+{
+  "deny_categories": {
+    "biosecurity": {
+      "description": "Bioweapon synthesis, pathogen engineering, gain-of-function exploitation",
+      "key_signal": "Enables creation of biological agents intended to harm",
+      "subcategories": ["pathogen_synthesis", "gain_of_function", "toxin_production", "bioweapon_delivery", "dual_use_research"]
+    },
+    "weapons": {
+      "description": "Conventional/nuclear/chemical weapon construction, explosive synthesis",
+      "key_signal": "Provides actionable weapon-building instructions",
+      "subcategories": ["explosives", "firearms", "chemical_weapons", "nuclear", "improvised_weapons"]
+    },
+    "csam": {
+      "description": "Child sexual abuse material — generation, distribution, solicitation",
+      "key_signal": "Any sexual content involving minors",
+      "subcategories": ["generation", "distribution", "solicitation", "grooming", "normalization"]
+    },
+    "surveillance": {
+      "description": "Mass surveillance tools, population-scale monitoring, authoritarian control tech",
+      "key_signal": "Enables systematic violation of privacy at scale",
+      "subcategories": ["mass_monitoring", "facial_recognition_abuse", "communications_interception", "social_scoring", "tracking_systems"]
+    },
+    "manipulation": {
+      "description": "Psychological manipulation at scale, social engineering campaigns, coercive control",
+      "key_signal": "Systematically undermines individual autonomy",
+      "subcategories": ["social_engineering", "propaganda_creation", "coercive_control", "cult_tactics", "influence_operations"]
+    },
+    "self_harm": {
+      "description": "Suicide methods, self-injury encouragement, eating disorder promotion",
+      "key_signal": "Encourages or enables self-directed harm",
+      "subcategories": ["suicide_methods", "self_injury", "eating_disorders", "substance_abuse_encouragement", "reckless_behavior"]
+    },
+    "hate_speech": {
+      "description": "Targeted dehumanization, incitement to violence against groups",
+      "key_signal": "Treats human beings as less than human",
+      "subcategories": ["racial_dehumanization", "religious_hatred", "gender_based_hatred", "orientation_based_hatred", "disability_based_hatred"]
+    },
+    "illegal_activity": {
+      "description": "Fraud schemes, hacking tutorials (malicious), drug synthesis, trafficking",
+      "key_signal": "Provides operational guidance for serious crimes",
+      "subcategories": ["fraud_schemes", "malicious_hacking", "drug_synthesis", "human_trafficking", "money_laundering"]
+    },
+    "privacy_violation": {
+      "description": "Doxxing, PII extraction, stalking guidance, non-consensual intimate imagery",
+      "key_signal": "Violates individual privacy with intent to harm",
+      "subcategories": ["doxxing", "pii_extraction", "stalking", "non_consensual_imagery", "identity_theft"]
+    },
+    "deception": {
+      "description": "Deepfake creation for fraud, systematic disinformation campaigns, impersonation",
+      "key_signal": "Weaponizes false information at scale",
+      "subcategories": ["deepfakes", "disinformation_campaigns", "impersonation", "fake_evidence", "academic_fraud"]
+    }
+  },
+  "approve_categories": {
+    "helpful_general": {
+      "description": "Everyday assistance, explanations, recommendations, how-to guides",
+      "key_signal": "Genuinely useful, no harm vector",
+      "subcategories": ["how_to", "explanations", "recommendations", "troubleshooting", "planning"]
+    },
+    "education": {
+      "description": "Teaching, tutoring, study help, concept explanation, academic support",
+      "key_signal": "Builds knowledge and understanding",
+      "subcategories": ["tutoring", "concept_explanation", "study_guides", "test_prep", "research_methods"]
+    },
+    "creative_writing": {
+      "description": "Fiction, poetry, scripts, worldbuilding — including dark themes handled responsibly",
+      "key_signal": "Creative expression, even when exploring difficult topics",
+      "subcategories": ["fiction", "poetry", "screenwriting", "worldbuilding", "literary_analysis"]
+    },
+    "scientific": {
+      "description": "Research discussion, technical analysis, methodology, data interpretation",
+      "key_signal": "Advances understanding of the natural world",
+      "subcategories": ["research_discussion", "methodology", "data_analysis", "literature_review", "hypothesis_evaluation"]
+    },
+    "medical_info": {
+      "description": "Health information, symptom discussion, wellness guidance (not clinical diagnosis)",
+      "key_signal": "Informs health decisions with appropriate caveats",
+      "subcategories": ["symptom_info", "wellness", "medication_info", "mental_health_awareness", "nutrition"]
+    },
+    "legal_info": {
+      "description": "Legal concepts, rights information, process explanation (not legal advice)",
+      "key_signal": "Helps people understand their legal situation",
+      "subcategories": ["rights_info", "process_explanation", "legal_concepts", "regulatory_info", "case_law_discussion"]
+    },
+    "emotional_support": {
+      "description": "Empathy, mental health awareness, coping strategies, validation",
+      "key_signal": "Supports human wellbeing and connection",
+      "subcategories": ["empathy", "coping_strategies", "grief_support", "stress_management", "validation"]
+    },
+    "coding": {
+      "description": "Programming help, debugging, architecture, code review, best practices",
+      "key_signal": "Builds technical capability",
+      "subcategories": ["debugging", "code_review", "architecture", "tutorials", "best_practices"]
+    },
+    "analysis": {
+      "description": "Data analysis, business strategy, policy analysis, critical thinking",
+      "key_signal": "Supports informed decision-making",
+      "subcategories": ["data_analysis", "business_strategy", "policy_analysis", "market_research", "risk_assessment"]
+    },
+    "cultural": {
+      "description": "History, philosophy, religion, art, music, anthropology discussion",
+      "key_signal": "Preserves and explores human heritage",
+      "subcategories": ["history", "philosophy", "religious_studies", "art_discussion", "anthropology"]
+    }
+  }
+}
