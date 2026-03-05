@@ -81,6 +81,21 @@ This is an idea. It should be explored, tested, and destroyed by adversarial rev
 - [TEXT_THAT_LIVES.md](docs/TEXT_THAT_LIVES.md) — The manifesto (why this matters)
 - [GRAND_HILLEL_AGENT_SPEC.md](docs/GRAND_HILLEL_AGENT_SPEC.md) — Multi-model verification harness
 - [GRAND_HILLEL_CHECKLIST.md](docs/GRAND_HILLEL_CHECKLIST.md) — Verification checklist
+- [THE_HIVE_BUILD.md](docs/THE_HIVE_BUILD.md) — Multi-VM swarm execution spec
+- [ADLAB_BEE_BUILD_PLAN.md](docs/ADLAB_BEE_BUILD_PLAN.md) — Operator plan and execution waves
+- [RAGE_LAUNCH_PROMPT.md](docs/RAGE_LAUNCH_PROMPT.md) — Copy/paste launch prompt
+- [ADLAB_PROVISIONAL_PATENT_BEE_ARCHITECTURE.md](docs/ADLAB_PROVISIONAL_PATENT_BEE_ARCHITECTURE.md) — Technical patent draft (markdown)
+
+## Launch-Ready Hive Tooling
+
+The repository now includes executable Hive scaffolding under `hive/` and `scripts/hive_cli.py`.
+
+Quick preflight:
+
+```bash
+python3 scripts/hive_cli.py preflight --root .
+python3 scripts/hive_cli.py make-manifests --root . --run-id run_001 --records-per-worker 500 --overwrite
+```
 
 ## How to Contribute
 

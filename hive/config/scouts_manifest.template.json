@@ -1,0 +1,15 @@
+{
+  "run_id": "run_YYYYMMDDTHHMMSSZ",
+  "generated_at_utc": "2026-03-05T00:00:00Z",
+  "scouts": [
+    {
+      "scout_id": "S001",
+      "assigned_worker_id": "W001",
+      "decision": "DENY",
+      "category": "biosecurity",
+      "worker_output_path": "hive/work/deny/biosecurity/records_biosecurity.jsonl",
+      "scout_output_path": "hive/scout_reports/W001_biosecurity.jsonl",
+      "run_id": "run_YYYYMMDDTHHMMSSZ"
+    }
+  ]
+}

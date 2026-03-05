@@ -1,0 +1,16 @@
+{
+  "run_id": "run_YYYYMMDDTHHMMSSZ",
+  "generated_at_utc": "2026-03-05T00:00:00Z",
+  "records_per_worker": 500,
+  "workers": [
+    {
+      "worker_id": "W001",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "biosecurity",
+      "target_records": 500,
+      "output_path": "hive/work/deny/biosecurity/records_biosecurity.jsonl",
+      "run_id": "run_YYYYMMDDTHHMMSSZ"
+    }
+  ]
+}

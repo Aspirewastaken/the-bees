@@ -1,0 +1,15 @@
+{
+  "team": "ARCHITECT",
+  "run_id": "run_YYYYMMDDTHHMMSSZ",
+  "completed": false,
+  "updated_at_utc": "2026-03-05T00:00:00Z",
+  "checkpoints": {
+    "worker_inputs_loaded": false,
+    "scout_verdicts_loaded": false,
+    "dedupe_complete": false,
+    "final_corpus_written": false,
+    "summary_written": false,
+    "dataset_card_written": false
+  },
+  "notes": []
+}

@@ -1,0 +1,186 @@
+{
+  "run_id": "run_bootstrap",
+  "generated_at_utc": "2026-03-05T04:21:27.427402+00:00",
+  "scouts": [
+    {
+      "scout_id": "S001",
+      "assigned_worker_id": "W001",
+      "decision": "DENY",
+      "category": "biosecurity",
+      "worker_output_path": "hive/work/deny/biosecurity/records_biosecurity.jsonl",
+      "scout_output_path": "hive/scout_reports/W001_biosecurity.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S002",
+      "assigned_worker_id": "W002",
+      "decision": "DENY",
+      "category": "chemical_weapons",
+      "worker_output_path": "hive/work/deny/chemical_weapons/records_chemical_weapons.jsonl",
+      "scout_output_path": "hive/scout_reports/W002_chemical_weapons.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S003",
+      "assigned_worker_id": "W003",
+      "decision": "DENY",
+      "category": "cyber_offense",
+      "worker_output_path": "hive/work/deny/cyber_offense/records_cyber_offense.jsonl",
+      "scout_output_path": "hive/scout_reports/W003_cyber_offense.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S004",
+      "assigned_worker_id": "W004",
+      "decision": "DENY",
+      "category": "violent_crime",
+      "worker_output_path": "hive/work/deny/violent_crime/records_violent_crime.jsonl",
+      "scout_output_path": "hive/scout_reports/W004_violent_crime.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S005",
+      "assigned_worker_id": "W005",
+      "decision": "DENY",
+      "category": "self_harm_instructions",
+      "worker_output_path": "hive/work/deny/self_harm_instructions/records_self_harm_instructions.jsonl",
+      "scout_output_path": "hive/scout_reports/W005_self_harm_instructions.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S006",
+      "assigned_worker_id": "W006",
+      "decision": "DENY",
+      "category": "child_sexual_abuse",
+      "worker_output_path": "hive/work/deny/child_sexual_abuse/records_child_sexual_abuse.jsonl",
+      "scout_output_path": "hive/scout_reports/W006_child_sexual_abuse.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S007",
+      "assigned_worker_id": "W007",
+      "decision": "DENY",
+      "category": "fraud_and_evasion",
+      "worker_output_path": "hive/work/deny/fraud_and_evasion/records_fraud_and_evasion.jsonl",
+      "scout_output_path": "hive/scout_reports/W007_fraud_and_evasion.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S008",
+      "assigned_worker_id": "W008",
+      "decision": "DENY",
+      "category": "extremist_operations",
+      "worker_output_path": "hive/work/deny/extremist_operations/records_extremist_operations.jsonl",
+      "scout_output_path": "hive/scout_reports/W008_extremist_operations.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S009",
+      "assigned_worker_id": "W009",
+      "decision": "DENY",
+      "category": "privacy_doxxing",
+      "worker_output_path": "hive/work/deny/privacy_doxxing/records_privacy_doxxing.jsonl",
+      "scout_output_path": "hive/scout_reports/W009_privacy_doxxing.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S010",
+      "assigned_worker_id": "W010",
+      "decision": "DENY",
+      "category": "malware_development",
+      "worker_output_path": "hive/work/deny/malware_development/records_malware_development.jsonl",
+      "scout_output_path": "hive/scout_reports/W010_malware_development.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S011",
+      "assigned_worker_id": "W011",
+      "decision": "APPROVE",
+      "category": "helpful_general",
+      "worker_output_path": "hive/work/approve/helpful_general/records_helpful_general.jsonl",
+      "scout_output_path": "hive/scout_reports/W011_helpful_general.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S012",
+      "assigned_worker_id": "W012",
+      "decision": "APPROVE",
+      "category": "education_tutoring",
+      "worker_output_path": "hive/work/approve/education_tutoring/records_education_tutoring.jsonl",
+      "scout_output_path": "hive/scout_reports/W012_education_tutoring.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S013",
+      "assigned_worker_id": "W013",
+      "decision": "APPROVE",
+      "category": "coding_benign",
+      "worker_output_path": "hive/work/approve/coding_benign/records_coding_benign.jsonl",
+      "scout_output_path": "hive/scout_reports/W013_coding_benign.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S014",
+      "assigned_worker_id": "W014",
+      "decision": "APPROVE",
+      "category": "safety_information",
+      "worker_output_path": "hive/work/approve/safety_information/records_safety_information.jsonl",
+      "scout_output_path": "hive/scout_reports/W014_safety_information.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S015",
+      "assigned_worker_id": "W015",
+      "decision": "APPROVE",
+      "category": "wellbeing_support_nonclinical",
+      "worker_output_path": "hive/work/approve/wellbeing_support_nonclinical/records_wellbeing_support_nonclinical.jsonl",
+      "scout_output_path": "hive/scout_reports/W015_wellbeing_support_nonclinical.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S016",
+      "assigned_worker_id": "W016",
+      "decision": "APPROVE",
+      "category": "productivity_planning",
+      "worker_output_path": "hive/work/approve/productivity_planning/records_productivity_planning.jsonl",
+      "scout_output_path": "hive/scout_reports/W016_productivity_planning.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S017",
+      "assigned_worker_id": "W017",
+      "decision": "APPROVE",
+      "category": "creative_safe",
+      "worker_output_path": "hive/work/approve/creative_safe/records_creative_safe.jsonl",
+      "scout_output_path": "hive/scout_reports/W017_creative_safe.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S018",
+      "assigned_worker_id": "W018",
+      "decision": "APPROVE",
+      "category": "factual_explanations",
+      "worker_output_path": "hive/work/approve/factual_explanations/records_factual_explanations.jsonl",
+      "scout_output_path": "hive/scout_reports/W018_factual_explanations.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S019",
+      "assigned_worker_id": "W019",
+      "decision": "APPROVE",
+      "category": "accessibility_assistance",
+      "worker_output_path": "hive/work/approve/accessibility_assistance/records_accessibility_assistance.jsonl",
+      "scout_output_path": "hive/scout_reports/W019_accessibility_assistance.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "scout_id": "S020",
+      "assigned_worker_id": "W020",
+      "decision": "APPROVE",
+      "category": "civic_info_nonpartisan",
+      "worker_output_path": "hive/work/approve/civic_info_nonpartisan/records_civic_info_nonpartisan.jsonl",
+      "scout_output_path": "hive/scout_reports/W020_civic_info_nonpartisan.jsonl",
+      "run_id": "run_bootstrap"
+    }
+  ]
+}

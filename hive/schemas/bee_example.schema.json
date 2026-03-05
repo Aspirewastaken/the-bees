@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adlab.example/hive/schemas/bee_example.schema.json",
+  "title": "Bee Example Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "decision",
+    "category",
+    "user_prompt",
+    "model_output",
+    "label_rationale",
+    "policy_tags",
+    "generator_team",
+    "generator_vm",
+    "created_at_utc",
+    "needs_human_review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "APPROVE",
+        "DENY"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_output": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label_rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "generator_team": {
+      "type": "string",
+      "enum": [
+        "WORKER-DENY",
+        "WORKER-APPROVE"
+      ]
+    },
+    "generator_vm": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "needs_human_review": {
+      "type": "boolean"
+    }
+  }
+}

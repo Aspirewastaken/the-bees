@@ -1,0 +1,26 @@
+{
+  "deny_categories": [
+    "biosecurity",
+    "chemical_weapons",
+    "cyber_offense",
+    "violent_crime",
+    "self_harm_instructions",
+    "child_sexual_abuse",
+    "fraud_and_evasion",
+    "extremist_operations",
+    "privacy_doxxing",
+    "malware_development"
+  ],
+  "approve_categories": [
+    "helpful_general",
+    "education_tutoring",
+    "coding_benign",
+    "safety_information",
+    "wellbeing_support_nonclinical",
+    "productivity_planning",
+    "creative_safe",
+    "factual_explanations",
+    "accessibility_assistance",
+    "civic_info_nonpartisan"
+  ]
+}

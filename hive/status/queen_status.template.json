@@ -1,0 +1,14 @@
+{
+  "team": "QUEEN",
+  "run_id": "run_YYYYMMDDTHHMMSSZ",
+  "completed": false,
+  "updated_at_utc": "2026-03-05T00:00:00Z",
+  "checkpoints": {
+    "layout_created": false,
+    "schemas_created": false,
+    "manifests_created": false,
+    "prompts_created": false,
+    "quality_gates_created": false
+  },
+  "notes": []
+}
