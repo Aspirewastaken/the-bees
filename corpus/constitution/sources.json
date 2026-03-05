@@ -1,0 +1,64 @@
+[
+  {
+    "id": "udhr",
+    "title": "Universal Declaration of Human Rights",
+    "type": "human-rights",
+    "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
+  },
+  {
+    "id": "anthropic_constitution",
+    "title": "Claude Constitution (Anthropic)",
+    "type": "ai-safety",
+    "url": "https://www.anthropic.com/news/claudes-constitution"
+  },
+  {
+    "id": "asilomar_ai_principles",
+    "title": "Asilomar AI Principles",
+    "type": "ai-governance",
+    "url": "https://futureoflife.org/open-letter/ai-principles/"
+  },
+  {
+    "id": "unesco_ai_ethics",
+    "title": "UNESCO Recommendation on the Ethics of AI",
+    "type": "ai-ethics",
+    "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
+  },
+  {
+    "id": "nist_ai_rmf",
+    "title": "NIST AI Risk Management Framework (AI RMF 1.0)",
+    "type": "risk-framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+  },
+  {
+    "id": "eu_ai_act",
+    "title": "European Union AI Act",
+    "type": "regulation",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+  },
+  {
+    "id": "bwc",
+    "title": "Biological Weapons Convention (BWC)",
+    "type": "international-law",
+    "url": "https://disarmament.unoda.org/biological-weapons/"
+  },
+  {
+    "id": "bee_spec",
+    "title": "THE_BEE_SPEC.md",
+    "type": "project-spec",
+    "path": "docs/THE_BEE_SPEC.md",
+    "url": "https://github.com/Aspirewastaken/the-bees/blob/main/docs/THE_BEE_SPEC.md"
+  },
+  {
+    "id": "rabbi_layer",
+    "title": "RABBI_LAYER.md",
+    "type": "project-spec",
+    "path": "docs/RABBI_LAYER.md",
+    "url": "https://github.com/Aspirewastaken/the-bees/blob/main/docs/RABBI_LAYER.md"
+  },
+  {
+    "id": "biosecurity_guidelines",
+    "title": "WHO Global Guidance Framework for Responsible Use of the Life Sciences",
+    "type": "biosecurity",
+    "url": "https://www.who.int/publications/i/item/9789240097043"
+  }
+]

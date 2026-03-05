@@ -2,12 +2,10 @@
 .venv/
 venv/
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .DS_Store
 .idea/
 .vscode/
-
