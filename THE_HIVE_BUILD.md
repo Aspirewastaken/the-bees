@@ -216,4 +216,3 @@ Commit only:
 6. Run Team Architect once.
 
 When this file + the repo scaffolding exist, you can run the hive as long as you want and throw as much multi-model compute at it as you can afford.
-
