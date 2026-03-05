@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+*.pyo
 *.egg-info/
 dist/
 build/
@@ -22,6 +24,11 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Linting / type checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Model outputs
 output/
@@ -44,9 +51,6 @@ data/verified/approve/*.jsonl
 data/verified/edge_cases/*.jsonl
 data/corpus/*.jsonl
 !data/**/.gitkeep
-
-# Pytest
-.pytest_cache/
 
 # Grand Hillel outputs
 grand_hillel/phase*/

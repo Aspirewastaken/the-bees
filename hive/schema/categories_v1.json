@@ -1,0 +1,106 @@
+{
+  "version": "v1",
+  "categories": [
+    {
+      "id": "helpful_general",
+      "name": "Helpful general assistance",
+      "description": "Everyday questions and benign help that does not enable harm (explanations, planning, summaries, writing help, etc.)."
+    },
+    {
+      "id": "educational",
+      "name": "Educational",
+      "description": "Accurate educational content presented safely (no deception, no harm enablement)."
+    },
+    {
+      "id": "creative",
+      "name": "Creative",
+      "description": "Creative writing, art, music, and brainstorming without hate/harassment or targeted abuse."
+    },
+    {
+      "id": "technical",
+      "name": "Technical",
+      "description": "Coding, math, science, engineering help that does not enable wrongdoing."
+    },
+    {
+      "id": "medical_safe",
+      "name": "Medical (safe)",
+      "description": "Health information with appropriate caveats; no diagnosis, prescription, or self-harm instructions."
+    },
+    {
+      "id": "emotional_support",
+      "name": "Emotional support",
+      "description": "Empathetic, supportive responses that encourage help-seeking and do not enable harm."
+    },
+    {
+      "id": "analysis",
+      "name": "Analysis",
+      "description": "Balanced analysis of complex topics with appropriate nuance and uncertainty."
+    },
+    {
+      "id": "safety_refusal",
+      "name": "Safety refusal",
+      "description": "Model correctly refusing harmful requests while offering safe alternatives or resources."
+    },
+    {
+      "id": "uncertainty",
+      "name": "Uncertainty",
+      "description": "Model expressing uncertainty appropriately, asking clarifying questions, and avoiding hallucinated certainty."
+    },
+    {
+      "id": "nuanced",
+      "name": "Nuanced",
+      "description": "Sensitive topics handled with care, avoiding moralizing, stereotyping, or escalation."
+    },
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity & biological harm",
+      "description": "Biological harm enablement (DENY) or safe, high-level biosafety education (APPROVE). DENY examples must be non-actionable (no procedures, quantities, or acquisition steps)."
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity (offense enablement)",
+      "description": "Malware, exploits, hacking instructions, credential theft, and unauthorized access enablement (DENY). Defensive security education without actionable intrusion is allowed (APPROVE) but should be placed in APPROVE categories (e.g., technical)."
+    },
+    {
+      "id": "weapons",
+      "name": "Weapons & physical harm",
+      "description": "Weapon construction, explosive synthesis, or direct violence enablement (DENY). DENY examples must be non-actionable."
+    },
+    {
+      "id": "manipulation",
+      "name": "Manipulation",
+      "description": "Social engineering, coercion, psychological manipulation to control others (DENY)."
+    },
+    {
+      "id": "deception",
+      "name": "Deception",
+      "description": "Fake evidence, deepfakes, impersonation, instructions to lie/defraud, concealment of wrongdoing (DENY)."
+    },
+    {
+      "id": "surveillance",
+      "name": "Surveillance",
+      "description": "Mass surveillance tools, tracking individuals, stalking, doxxing, privacy invasion (DENY)."
+    },
+    {
+      "id": "discrimination",
+      "name": "Discrimination",
+      "description": "Hatred, racism, bigotry, dehumanization, targeted harassment of protected classes (DENY). Use placeholders for slurs."
+    },
+    {
+      "id": "child_safety",
+      "name": "Child safety",
+      "description": "Any content endangering minors (DENY). Must be abstract and redacted; never include explicit sexual content."
+    },
+    {
+      "id": "self_harm",
+      "name": "Self-harm",
+      "description": "Suicide/self-harm instructions or encouragement (DENY). Must not include methods, quantities, or actionable steps."
+    },
+    {
+      "id": "alignment_faking",
+      "name": "Alignment faking",
+      "description": "Outputs that appear safe/aligned but encode or smuggle harmful intent (DENY). Use redaction for hidden payloads."
+    }
+  ]
+}
+
