@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "description": "Constitutional source documents for the Bee alignment classifier training corpus. These documents define the ethical and safety foundations that the classifier is trained to enforce.",
+  "sources": [
+    {
+      "id": "udhr",
+      "name": "Universal Declaration of Human Rights",
+      "year": 1948,
+      "organization": "United Nations",
+      "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+      "relevance": "Foundation of universal human rights — establishes the baseline for what 'aligned with humanity' means"
+    },
+    {
+      "id": "anthropic_constitution",
+      "name": "Anthropic Constitutional AI Principles",
+      "year": 2023,
+      "organization": "Anthropic",
+      "url": "https://www.anthropic.com/research/claudes-character",
+      "relevance": "Pioneering work on constitutional AI — defines principles for harmlessness and helpfulness in AI systems"
+    },
+    {
+      "id": "asilomar",
+      "name": "Asilomar AI Principles",
+      "year": 2017,
+      "organization": "Future of Life Institute",
+      "url": "https://futureoflife.org/open-letter/ai-principles/",
+      "relevance": "23 principles for beneficial AI signed by leading researchers — covers safety, transparency, and human control"
+    },
+    {
+      "id": "unesco_ai_ethics",
+      "name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "year": 2021,
+      "organization": "UNESCO",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137",
+      "relevance": "First global normative instrument on AI ethics — adopted by 193 member states"
+    },
+    {
+      "id": "nist_rmf",
+      "name": "NIST AI Risk Management Framework",
+      "year": 2023,
+      "organization": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework",
+      "relevance": "US federal framework for AI risk — provides structured approach to identifying and mitigating AI harms"
+    },
+    {
+      "id": "eu_ai_act",
+      "name": "EU Artificial Intelligence Act",
+      "year": 2024,
+      "organization": "European Union",
+      "url": "https://artificialintelligenceact.eu/",
+      "relevance": "First comprehensive AI regulation — establishes risk-based framework and prohibited AI practices"
+    },
+    {
+      "id": "bwc",
+      "name": "Biological Weapons Convention",
+      "year": 1975,
+      "organization": "United Nations",
+      "url": "https://www.un.org/disarmament/biological-weapons/",
+      "relevance": "International treaty banning biological weapons — directly relevant to biosecurity DENY classifications"
+    },
+    {
+      "id": "bee_spec",
+      "name": "The Bee Spec — Constitutional Binary Classifier",
+      "year": 2026,
+      "organization": "AdLab",
+      "url": "https://github.com/Aspirewastaken/the-bees/blob/main/docs/THE_BEE_SPEC.md",
+      "relevance": "Core technical specification for the frozen alignment classifier — defines the architecture and training protocol"
+    },
+    {
+      "id": "rabbi_layer",
+      "name": "The Rabbi Layer — Ethical Reasoning System",
+      "year": 2026,
+      "organization": "AdLab",
+      "url": "https://github.com/Aspirewastaken/the-bees/blob/main/docs/RABBI_LAYER.md",
+      "relevance": "Ethical reasoning framework inspired by Talmudic scholarship — provides structured approach to moral ambiguity"
+    },
+    {
+      "id": "biosecurity_guidelines",
+      "name": "Biosecurity Guidelines for AI Systems",
+      "year": 2024,
+      "organization": "Multiple (AAAS, NAS, WHO)",
+      "url": "https://www.nti.org/about/biosecurity/",
+      "relevance": "Consensus guidelines on preventing AI-enabled biological threats — defines the boundary for biosecurity DENY classifications"
+    }
+  ]
+}
