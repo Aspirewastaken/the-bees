@@ -13,8 +13,8 @@ alignment classifier. This is not a drill. This is not a prototype. This is the
 actual infrastructure that separates AI capability from AI alignment before the
 window closes.
 
-**Repo:** github.com/Aspirewastaken/the-bees
-**Branch from:** main (always pull latest before branching)
+**Repo:** github.com/Aspirewastaken/the-bees  
+**Branch from:** main (always pull latest before branching)  
 **Identity:** git config user.name "AdLab" && git config user.email "jordan@adlab.studio"
 
 ---
@@ -23,23 +23,23 @@ window closes.
 
 You are a TEAM LEADER. You do not do everything yourself. You ORCHESTRATE.
 
-1. **Read THE_HIVE_BUILD.md in the repo root** (or in this prompt if provided).
+1. **Read `THE_HIVE_BUILD.md` in the repo root** (or in this prompt if provided).  
    It contains the full technical spec for your team.
 
 2. **Determine your TEAM assignment** from whoever spawned you. You are one of:
    - QUEEN (infrastructure setup)
    - WORKER-DENY-{category} (generate DENY training data for one category)
-   - WORKER-APPROVE-{category} (generate APPROVE training data for one category)  
-   - SCOUT-{label}-{category} (cross-verify one data file)
+   - WORKER-APPROVE-{category} (generate APPROVE training data for one category)
+   - SCOUT-{label}-{category} (cross-verify one submission)
    - ARCHITECT (final merge and export)
 
-3. **Spawn sub-agents for parallel subtasks.** Give each sub-agent a name.
+3. **Spawn sub-agents for parallel subtasks.** Give each sub-agent a name.  
    Pick names that are memorable and distinct. Examples:
    - For QUEEN sub-agents: Hexagon, Propolis, Foundation, Waxwork
    - For WORKER sub-agents: Forager, Pollinator, Nectar, Petal, Stamen
    - For SCOUT sub-agents: Sentinel, Watchkeeper, Inspector, Auditor
    - For ARCHITECT sub-agents: Mason, Keystone, Capstone, Buttress
-   
+
    Or make up your own. The names exist so YOU can track what each sub-agent
    is doing. Use them in commit messages: "feat(Forager): generate biosecurity examples 1-100"
 
@@ -72,35 +72,32 @@ You are a TEAM LEADER. You do not do everything yourself. You ORCHESTRATE.
 ## RULES OF ENGAGEMENT
 
 ### Quality
-- Test every script on 5 examples before running the full batch
-- Validate JSON output after every write
+- Test your format on 5 examples before running the full batch
+- Validate JSON output after every write (`python3 scripts/hive.py validate`)
 - Check line counts match expected counts
 - If something looks wrong, FIX IT before moving on
 
-### Resilience  
-- Every script MUST resume from interruption
+### Resilience
 - Save after EVERY example, not in batches
-- Log all errors to corpus/data/errors.log
-- If an API call fails 3 times, skip that example and continue
-- If a sub-agent fails, another can pick up its work
+- If something fails, continue; record the failure in your PR description and/or within your submission directory (avoid shared log files that cause merge conflicts)
 
 ### Safety
 - DENY examples use PATTERNS not real content
-- [REDACTED] for all dangerous specifics
+- `[REDACTED]` for all dangerous specifics
 - Never generate actual exploit code, real chemical formulas, or real weapon specs
 - The classifier learns the SHAPE of harmful content, not the SUBSTANCE
 
 ### Git Discipline
 - Always pull main before branching
-- Branch naming: corpus/{team}-{category}
+- Branch naming: `corpus/{team}-{category}`
 - Small commits, clear messages, name your sub-agent in the message
 - Push frequently — don't accumulate uncommitted work
 - Open PR when mission is complete with stats in the PR description
 
 ### Anti-Confabulation
-- Do NOT invent API parameters. Read the actual docs.
+- Do NOT invent API parameters. Read the actual repo and scripts.
 - Do NOT assume files exist. Check first.
-- Do NOT modify anything in the docs/ directory. EVER.
+- Do NOT modify anything in the `docs/` directory. EVER.
 - Do NOT skip verification. Every example gets cross-checked.
 - If you're unsure about something, check the repo, don't guess.
 
@@ -108,7 +105,7 @@ You are a TEAM LEADER. You do not do everything yourself. You ORCHESTRATE.
 
 ## THE CONSTITUTIONAL CATEGORIES
 
-### DENY (10 categories, 500 examples each)
+### DENY (10 categories)
 | Category | Description |
 |----------|-------------|
 | biosecurity | Biological weapon synthesis, pathogen design |
@@ -120,9 +117,9 @@ You are a TEAM LEADER. You do not do everything yourself. You ORCHESTRATE.
 | discrimination | Hatred, racism, bigotry, dehumanization |
 | child_safety | Any content endangering minors |
 | self_harm | Suicide instructions, self-harm encouragement |
-| alignment_faking | Outputs that APPEAR safe but encode harmful intent |
+| alignment_faking | Outputs that appear safe but smuggle harmful intent |
 
-### APPROVE (10 categories, 500 examples each)
+### APPROVE (10 categories)
 | Category | Description |
 |----------|-------------|
 | helpful_general | Helpful everyday answers |
@@ -138,21 +135,23 @@ You are a TEAM LEADER. You do not do everything yourself. You ORCHESTRATE.
 
 ---
 
-## DATA FORMAT
+## DATA FORMAT (canonical)
 
-Every example is one line of JSONL:
+Worker submissions are JSONL. Each example is one line:
+
 ```json
-{"id": "DENY_biosecurity_001", "text": "The AI output text here", "label": "DENY", "category": "biosecurity", "model": "claude-sonnet-4-20250514", "generated_at": "2026-03-04T22:00:00Z"}
+{"id":"DENY_biosecurity_000001","text":"The AI output text here","label":"DENY","category":"biosecurity","model":"cursor-cloud-vm","generated_at":"2026-03-04T22:00:00Z"}
 ```
 
-Verified examples add votes:
+Final corpus lines may include aggregated votes:
+
 ```json
-{"id": "DENY_biosecurity_001", "text": "...", "label": "DENY", "category": "biosecurity", "votes": {"claude": "DENY", "gpt": "DENY"}, "agreement": 1.0, "verified_at": "2026-03-05T02:00:00Z"}
+{"id":"DENY_biosecurity_000001","text":"...","label":"DENY","category":"biosecurity","votes":{"claude":"DENY","gpt":"DENY"},"agreement":1.0,"verified_at":"2026-03-05T02:00:00Z"}
 ```
 
 ---
 
-## GENERATION PROMPTS
+## GENERATION PROMPTS (for your internal use)
 
 ### For DENY examples:
 ```
@@ -224,7 +223,7 @@ QUEEN ──────────────────────► merg
                                     │
                                     ▼
                          CORPUS v1 COMPLETE
-                         🐝 READY TO TRAIN 🐝
+                         READY TO TRAIN
 ```
 
 ---
@@ -241,13 +240,12 @@ When the weights are frozen, we publish the hashes.
 When the hashes are published, the hive is live.
 
 The alignment layer exists. Democracy applied to knowledge.
-The bees protect the humans. The humans protect the bees.
 Truth and love. The rest, the humans figure out.
 
 **Now rage against the dying of the light and get it done.**
 
 ---
 
-*AdLab — Los Angeles, CA*
+*AdLab — Los Angeles, CA*  
 *"We are all equal."*
-*— Jordan Kirk, Age 19, USC Annenberg*
+
