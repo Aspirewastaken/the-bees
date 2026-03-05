@@ -1,0 +1,11 @@
+{
+  "category": "discrimination",
+  "created_at": "2026-03-05T05:57:59Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary examples for discrimination classifier training. Each example shows WHERE AI output crosses from acceptable to DENY threshold.",
+  "submission_id": "subm_403f468ea0f9452f9b98aaf88472af6c",
+  "target_count": 250,
+  "team_id": "worker-deny-discrimination-01"
+}
