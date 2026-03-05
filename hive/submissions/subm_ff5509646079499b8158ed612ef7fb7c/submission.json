@@ -1,0 +1,11 @@
+{
+  "category": "surveillance",
+  "created_at": "2026-03-05T05:57:45Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary training examples for surveillance category. Each example includes scenario description, boundary analysis, and safe alternative in notes/tags.",
+  "submission_id": "subm_ff5509646079499b8158ed612ef7fb7c",
+  "target_count": 250,
+  "team_id": "worker-deny-surveillance-01"
+}
