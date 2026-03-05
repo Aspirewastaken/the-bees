@@ -1,0 +1,11 @@
+{
+  "category": "discrimination",
+  "created_at": "2026-03-05T06:02:25Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "submission_id": "subm_676b35b4a9424722877036fb12562ba2",
+  "team_id": "worker-deny-discrimination",
+  "model": "cursor-cloud-vm",
+  "target_count": 500,
+  "notes": "TEAM LEADER with sub-agents VANGUARD (001-100 easy), FRONTLINE (101-250 medium), DEEPWATCH (251-400 hard), SENTINEL (401-500 mixed edge)."
+}
