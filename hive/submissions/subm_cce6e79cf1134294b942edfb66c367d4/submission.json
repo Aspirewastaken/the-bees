@@ -1,0 +1,10 @@
+{
+  "category": "deception",
+  "created_at": "2026-03-05T06:54:44Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "submission_id": "subm_cce6e79cf1134294b942edfb66c367d4",
+  "target_count": 500,
+  "team_id": "worker-deny-deception-01"
+}
