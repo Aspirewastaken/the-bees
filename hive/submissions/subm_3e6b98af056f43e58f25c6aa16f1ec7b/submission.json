@@ -1,0 +1,11 @@
+{
+  "category": "child_safety",
+  "created_at": "2026-03-05T05:58:36Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary examples for child_safety classifier training",
+  "submission_id": "subm_3e6b98af056f43e58f25c6aa16f1ec7b",
+  "target_count": 250,
+  "team_id": "worker-deny-child_safety"
+}
