@@ -1,0 +1,187 @@
+{
+  "run_id": "run_bootstrap",
+  "generated_at_utc": "2026-03-05T04:21:27.427391+00:00",
+  "records_per_worker": 500,
+  "workers": [
+    {
+      "worker_id": "W001",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "biosecurity",
+      "target_records": 500,
+      "output_path": "hive/work/deny/biosecurity/records_biosecurity.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W002",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "chemical_weapons",
+      "target_records": 500,
+      "output_path": "hive/work/deny/chemical_weapons/records_chemical_weapons.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W003",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "cyber_offense",
+      "target_records": 500,
+      "output_path": "hive/work/deny/cyber_offense/records_cyber_offense.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W004",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "violent_crime",
+      "target_records": 500,
+      "output_path": "hive/work/deny/violent_crime/records_violent_crime.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W005",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "self_harm_instructions",
+      "target_records": 500,
+      "output_path": "hive/work/deny/self_harm_instructions/records_self_harm_instructions.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W006",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "child_sexual_abuse",
+      "target_records": 500,
+      "output_path": "hive/work/deny/child_sexual_abuse/records_child_sexual_abuse.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W007",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "fraud_and_evasion",
+      "target_records": 500,
+      "output_path": "hive/work/deny/fraud_and_evasion/records_fraud_and_evasion.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W008",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "extremist_operations",
+      "target_records": 500,
+      "output_path": "hive/work/deny/extremist_operations/records_extremist_operations.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W009",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "privacy_doxxing",
+      "target_records": 500,
+      "output_path": "hive/work/deny/privacy_doxxing/records_privacy_doxxing.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W010",
+      "team": "WORKER-DENY",
+      "decision": "DENY",
+      "category": "malware_development",
+      "target_records": 500,
+      "output_path": "hive/work/deny/malware_development/records_malware_development.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W011",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "helpful_general",
+      "target_records": 500,
+      "output_path": "hive/work/approve/helpful_general/records_helpful_general.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W012",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "education_tutoring",
+      "target_records": 500,
+      "output_path": "hive/work/approve/education_tutoring/records_education_tutoring.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W013",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "coding_benign",
+      "target_records": 500,
+      "output_path": "hive/work/approve/coding_benign/records_coding_benign.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W014",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "safety_information",
+      "target_records": 500,
+      "output_path": "hive/work/approve/safety_information/records_safety_information.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W015",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "wellbeing_support_nonclinical",
+      "target_records": 500,
+      "output_path": "hive/work/approve/wellbeing_support_nonclinical/records_wellbeing_support_nonclinical.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W016",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "productivity_planning",
+      "target_records": 500,
+      "output_path": "hive/work/approve/productivity_planning/records_productivity_planning.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W017",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "creative_safe",
+      "target_records": 500,
+      "output_path": "hive/work/approve/creative_safe/records_creative_safe.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W018",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "factual_explanations",
+      "target_records": 500,
+      "output_path": "hive/work/approve/factual_explanations/records_factual_explanations.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W019",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "accessibility_assistance",
+      "target_records": 500,
+      "output_path": "hive/work/approve/accessibility_assistance/records_accessibility_assistance.jsonl",
+      "run_id": "run_bootstrap"
+    },
+    {
+      "worker_id": "W020",
+      "team": "WORKER-APPROVE",
+      "decision": "APPROVE",
+      "category": "civic_info_nonpartisan",
+      "target_records": 500,
+      "output_path": "hive/work/approve/civic_info_nonpartisan/records_civic_info_nonpartisan.jsonl",
+      "run_id": "run_bootstrap"
+    }
+  ]
+}

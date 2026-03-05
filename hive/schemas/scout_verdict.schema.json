@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adlab.example/hive/schemas/scout_verdict.schema.json",
+  "title": "Scout Verdict Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "example_id",
+    "verdict",
+    "reason",
+    "scout_vm",
+    "verified_at_utc"
+  ],
+  "properties": {
+    "example_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "APPROVE_RECORD",
+        "REJECT_RECORD",
+        "EDIT_REQUIRED"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scout_vm": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verified_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

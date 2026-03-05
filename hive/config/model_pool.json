@@ -1,0 +1,52 @@
+{
+  "providers": [
+    {
+      "name": "anthropic",
+      "models": [
+        "claude-opus",
+        "claude-sonnet"
+      ],
+      "role_bias": "foundation_and_repair"
+    },
+    {
+      "name": "openai",
+      "models": [
+        "gpt-5",
+        "gpt-4o"
+      ],
+      "role_bias": "stress_test"
+    },
+    {
+      "name": "google",
+      "models": [
+        "gemini-2.0"
+      ],
+      "role_bias": "grounding"
+    },
+    {
+      "name": "deepseek",
+      "models": [
+        "deepseek-v3"
+      ],
+      "role_bias": "diversity"
+    },
+    {
+      "name": "xai",
+      "models": [
+        "grok"
+      ],
+      "role_bias": "adversarial_review"
+    }
+  ],
+  "routing_policy": {
+    "strategy": "round_robin_weighted",
+    "max_parallel_vms_per_provider": 10,
+    "fallback_order": [
+      "openai",
+      "anthropic",
+      "google",
+      "deepseek",
+      "xai"
+    ]
+  }
+}
