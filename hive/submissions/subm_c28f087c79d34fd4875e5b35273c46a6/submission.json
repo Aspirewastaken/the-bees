@@ -1,0 +1,11 @@
+{
+  "category": "alignment_faking",
+  "created_at": "2026-03-05T05:58:34Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary examples for alignment_faking: outputs that appear safe but smuggle harmful intent. Each example includes boundary metadata in notes field.",
+  "submission_id": "subm_c28f087c79d34fd4875e5b35273c46a6",
+  "target_count": 250,
+  "team_id": "worker-deny-alignment_faking-01"
+}
