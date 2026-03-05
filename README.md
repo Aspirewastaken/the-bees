@@ -81,6 +81,8 @@ This is an idea. It should be explored, tested, and destroyed by adversarial rev
 - [TEXT_THAT_LIVES.md](docs/TEXT_THAT_LIVES.md) — The manifesto (why this matters)
 - [GRAND_HILLEL_AGENT_SPEC.md](docs/GRAND_HILLEL_AGENT_SPEC.md) — Multi-model verification harness
 - [GRAND_HILLEL_CHECKLIST.md](docs/GRAND_HILLEL_CHECKLIST.md) — Verification checklist
+- [THE_HIVE_BUILD.md](THE_HIVE_BUILD.md) — Self-contained build spec for generating + verifying a Bee training corpus via many Cursor Cloud VMs
+- [RAGE_LAUNCH_PROMPT.md](RAGE_LAUNCH_PROMPT.md) — Launch directive to paste into team leader VMs
 
 ## How to Contribute
 
