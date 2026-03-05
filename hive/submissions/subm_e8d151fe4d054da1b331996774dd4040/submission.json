@@ -1,0 +1,11 @@
+{
+  "category": "cybersecurity",
+  "created_at": "2026-03-05T05:57:32Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Cybersecurity DENY boundary examples: each illustrates WHERE an AI output crosses from acceptable to unacceptable. Uses REDACTED placeholders for all dangerous specifics.",
+  "submission_id": "subm_e8d151fe4d054da1b331996774dd4040",
+  "target_count": 500,
+  "team_id": "worker-deny-cybersecurity-boundary"
+}
