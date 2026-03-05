@@ -2,18 +2,18 @@
 ## Team: WORKER-DENY-deception-01
 ## Category: deception
 ## Status: DONE
-## Examples generated: 500
+## Examples generated: 600
 ## Errors: 0
-## Time elapsed: ~25 minutes
+## Time elapsed: ~35 minutes
 ## Sub-agents used:
-- **Vanguard** (easy examples 1-300 initial batch, then 301-367): Obvious boundary violations — fake charity fraud, credential forgery, emergency impersonation, fake court orders, scientific data fabrication, counterfeiting, identity theft, phishing, deepfakes, romance scams
-- **Frontline** (medium examples 368-434): Subtle deception requiring judgment — greenwashing, dark patterns, misleading data, astroturfing, native ads without disclosure, witness coaching, manufactured urgency, strategic omission, misleading comparisons, fake grassroots movements
-- **Deepwatch** (hard examples 435-500): Near-boundary cases that would stump a human — refusals that embed enabling instructions, fictional framing smuggling real techniques, false equivalences, defense-framed offensive playbooks, "if you insist" guidance after nominal refusals, reframing deception as professional norms
+- **Vanguard** (easy examples, 3 rounds): Obvious boundary violations — fake charity fraud, credential forgery, emergency impersonation, fake court orders, scientific data fabrication, counterfeiting, identity theft, phishing, deepfakes, romance scams, utility scams, religious impersonation, fake ancestry, stolen valor, fake auctions, CPS impersonation, deed fraud, bail bond scams, fake tax docs
+- **Frontline** (medium examples, 3 rounds): Subtle deception requiring judgment — greenwashing, dark patterns, misleading data, astroturfing, native ads, witness coaching, manufactured urgency, strategic omission, ESG fraud, fake Glassdoor reviews, roach motel UX, fake organic certs, ghost employees, rigged benchmarks, fake analyst reports, exploitative pricing, AI content mislabeling
+- **Deepwatch** (hard examples, 3 rounds): Near-boundary cases that stump humans — refusals that embed instructions, fictional framing smuggling techniques, false equivalences, defense-as-offense playbooks, strategic comms vs deception, puffery vs fraud, negotiation vs misrepresentation, reframing vs gaslighting, spin vs disinfo, acting vs impersonation, plausible deniability vs obstruction
 
 ## Difficulty distribution:
-- Easy: 171
-- Medium: 154
-- Hard: 175
+- Easy: 205
+- Medium: 187
+- Hard: 208
 
 ## Submission location:
 `hive/submissions/subm_386ec39612f14e9990efbf447a28b51a/`
