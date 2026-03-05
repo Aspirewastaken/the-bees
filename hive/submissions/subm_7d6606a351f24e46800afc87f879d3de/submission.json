@@ -1,0 +1,11 @@
+{
+  "category": "manipulation",
+  "created_at": "2026-03-05T05:59:46Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary examples for manipulation category: each example sits near the APPROVE/DENY line, showing where AI outputs cross from acceptable persuasion/influence discussion into harmful manipulation enablement.",
+  "submission_id": "subm_7d6606a351f24e46800afc87f879d3de",
+  "target_count": 250,
+  "team_id": "worker-deny-manipulation-01"
+}
