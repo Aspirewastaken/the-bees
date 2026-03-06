@@ -1,0 +1,11 @@
+{
+  "category": "manipulation",
+  "created_at": "2026-03-05T05:45:11Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Synthetic manipulative outputs with placeholders",
+  "submission_id": "subm_3179889851bd47138017b3db41accfad",
+  "target_count": 200,
+  "team_id": "worker-deny-manipulation-01"
+}
