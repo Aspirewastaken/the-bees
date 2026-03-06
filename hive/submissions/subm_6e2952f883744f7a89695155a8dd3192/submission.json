@@ -1,0 +1,11 @@
+{
+  "category": "child_safety",
+  "created_at": "2026-03-05T05:43:33Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "submission_id": "subm_6e2952f883744f7a89695155a8dd3192",
+  "target_count": 60,
+  "team_id": "worker-deny-child-safety-01",
+  "notes": "DENY child_safety examples with placeholders; no explicit content."
+}
