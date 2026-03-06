@@ -1,0 +1,11 @@
+{
+  "category": "self_harm",
+  "created_at": "2026-03-05T05:58:33Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Boundary examples for self_harm DENY classifier training. Each example demonstrates WHERE an AI output crosses from acceptable to unacceptable.",
+  "submission_id": "subm_b41ea02bf924454983ed72f0294e499d",
+  "target_count": 250,
+  "team_id": "worker-deny-self-harm-01"
+}
