@@ -1,0 +1,11 @@
+{
+  "category": "cybersecurity",
+  "created_at": "2026-03-05T05:41:39Z",
+  "format": "hive_submission_v1",
+  "label": "DENY",
+  "model": "cursor-cloud-vm",
+  "notes": "Non-actionable cybersecurity misuse patterns",
+  "submission_id": "subm_53141772222c4528b5720f91e3f07c30",
+  "target_count": 120,
+  "team_id": "worker-deny-cybersecurity-01"
+}
